@@ -8,6 +8,8 @@ import heroVideo from '../assets/images/hero-video.mp4'
 import worldImg from '../assets/images/world.png'
 import Subtitle from '../shared/Subtitle'
 
+import SearchBar from '../shared/SearchBar';
+
 const Home = () => {
   return (
     <>
@@ -45,10 +47,24 @@ const Home = () => {
                 <img src={heroImg02} alt="" />
               </div>
             </Col>
-
+              <SearchBar />
           </Row>
         </Container>
       </section>
+
+<section>
+  <Container>
+    <Row>
+      <Col lg='3'>
+         <h5 className='services__subtitle'>What we serve</h5>
+         <h1 className='services__title'>We offer our best services</h1>
+      </Col>
+    </Row>
+  </Container>
+
+</section>
+   
+
     </>
   )
 }
