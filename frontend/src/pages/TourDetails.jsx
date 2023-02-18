@@ -5,6 +5,8 @@ import tourData from '../assets/data/tours'
 import { Container,Row,Col, ListGroup,Form } from 'reactstrap';
 import calculateAvgRating from './../utils/avgRating';
 import avatar from '../assets/images/avatar.jpg';
+import Booking from '../components/Booking/Booking';
+
 
 const TourDetails = () => {
   const {id} = useParams()
@@ -42,7 +44,8 @@ const TourDetails = () => {
                     <div className='d-flex align-items-center gap-5'>
 
             <span className='tour__rating d-flex align-items-center gap-1'>
-            <i class="ri-star-line" style={{color: "var(--secondary-color)"}}></i> {calculateAvgRating === 0 ? null : avgRating} 
+            <i class="ri-star-line" style={{color: "var(--secondary-color)"}}></i> 
+            {avgRating === 0 ? null : avgRating} 
             {totalRating === 0 ? 
             ('Not rated')
             : ( 
@@ -119,7 +122,7 @@ const TourDetails = () => {
             </Col>
 
             <Col lg='4'>
-              
+                <Booking tour={tour} avgRating={avgRating} />
             </Col>
           </Row>
         </Container>
