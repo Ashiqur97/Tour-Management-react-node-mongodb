@@ -30,6 +30,7 @@ const tours = [
     title: "Bali, Indonesia",
     city: "Indonesia",
     distance: 400,
+    address: "Somewhere",
     price: 99,
     maxGroupSize: 8,
     desc: "this is the description",
@@ -49,6 +50,7 @@ const tours = [
     city: "Thailand",
     distance: 500,
     price: 99,
+    address: "Somewhere",
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
@@ -85,6 +87,7 @@ const tours = [
     city: "Indonesia",
     distance: 500,
     price: 99,
+    address: "Somewhere",
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
